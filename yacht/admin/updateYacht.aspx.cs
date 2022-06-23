@@ -25,6 +25,7 @@ namespace yacht.admin
 
         private void loadInfo()
         {
+            //抓ID
             string id = Request.QueryString["id"];
             SqlConnection connection = new SqlConnection(WebConfigurationManager.ConnectionStrings["yachtConnectionString"].ConnectionString);
             SqlCommand cmd = new SqlCommand($"SELECT * FROM yachtType WHERE id = @id", connection);

@@ -85,10 +85,10 @@ namespace yacht.admin
             string attachSavePath = Server.MapPath("~/admin/upload/yacht/attachment/");
             if (attachedUpload.HasFiles)
             {
+                DirectoryInfo attached = new DirectoryInfo(attachSavePath);
                 foreach (HttpPostedFile uploadFile in attachedUpload.PostedFiles)
                 {
-                    DirectoryInfo attached = new DirectoryInfo(attachSavePath);
-                    string attachedFileName = attachedUpload.FileName;
+                    string attachedFileName = uploadFile.FileName;
                     string[] attachedFileNameArray = attachedFileName.Split('.');
                     int count = 0;
                     foreach (var file in attached.GetFiles())
@@ -100,7 +100,7 @@ namespace yacht.admin
                     }
 
                     attachedFileName = attachedFileNameArray[0] + $"({count + 1})." + attachedFileNameArray[1];
-                    attachedUpload.SaveAs(attachSavePath + attachedFileName);
+                    uploadFile.SaveAs(attachSavePath + attachedFileName);
                     string attachedSQL = "INSERT INTO yachtFile(fileName, yacht_id)VALUES(@fileName, @yacht_id)";
                     SqlCommand sql2 = new SqlCommand(attachedSQL, connection);
                     sql2.Parameters.Add("@fileName", SqlDbType.NVarChar);
@@ -115,10 +115,10 @@ namespace yacht.admin
             string photoSavePath = Server.MapPath("~/admin/upload/yacht/photo/");
             if (yachtPhotosUpload.HasFiles)
             {
+                DirectoryInfo yachtPhoto = new DirectoryInfo(photoSavePath);
                 foreach (HttpPostedFile photo in yachtPhotosUpload.PostedFiles)
                 {
-                    DirectoryInfo yachtPhoto = new DirectoryInfo(photoSavePath);
-                    string photoFileName = yachtPhotosUpload.FileName;
+                    string photoFileName = photo.FileName;
                     string[] photoFileNameArray = photoFileName.Split('.');
                     int count = 0;
                     foreach (var file in yachtPhoto.GetFiles())
@@ -129,7 +129,7 @@ namespace yacht.admin
                         }
                     }
                     photoFileName = photoFileNameArray[0] + $"({count + 1})." + photoFileNameArray[1];
-                    yachtPhotosUpload.SaveAs(photoSavePath + photoFileName);
+                    photo.SaveAs(photoSavePath + photoFileName);
                     string photoSQL = "INSERT INTO yachtPhoto(photoName, yacht_id)VALUES(@photoName, @yacht_id)";
                     SqlCommand sql3 = new SqlCommand(photoSQL, connection);
                     sql3.Parameters.Add("@photoName", SqlDbType.NVarChar);

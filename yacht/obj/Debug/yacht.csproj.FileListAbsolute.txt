@@ -64,3 +64,17 @@ C:\Users\chun0\source\repos\yacht\yacht\bin\Microsoft.AspNet.FriendlyUrls.dll
 C:\Users\chun0\source\repos\yacht\yacht\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\chun0\source\repos\yacht\yacht\bin\System.Data.SqlClient.dll
 C:\Users\chun0\source\repos\yacht\yacht\bin\System.Data.SqlClient.xml
+C:\Users\chun0\source\repos\yacht\yacht\bin\Konscious.Security.Cryptography.Blake2.dll
+C:\Users\chun0\source\repos\yacht\yacht\bin\System.Numerics.Vectors.dll
+C:\Users\chun0\source\repos\yacht\yacht\bin\Konscious.Security.Cryptography.Blake2.xml
+C:\Users\chun0\source\repos\yacht\yacht\bin\System.Numerics.Vectors.xml
+C:\Users\chun0\source\repos\yacht\yacht\bin\Konscious.Security.Cryptography.Argon2.dll
+C:\Users\chun0\source\repos\yacht\yacht\bin\System.Buffers.dll
+C:\Users\chun0\source\repos\yacht\yacht\bin\System.Memory.dll
+C:\Users\chun0\source\repos\yacht\yacht\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\chun0\source\repos\yacht\yacht\bin\Konscious.Security.Cryptography.Argon2.xml
+C:\Users\chun0\source\repos\yacht\yacht\bin\System.Buffers.xml
+C:\Users\chun0\source\repos\yacht\yacht\bin\System.Memory.xml
+C:\Users\chun0\source\repos\yacht\yacht\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\chun0\source\repos\yacht\yacht\bin\Newtonsoft.Json.dll
+C:\Users\chun0\source\repos\yacht\yacht\bin\Newtonsoft.Json.xml

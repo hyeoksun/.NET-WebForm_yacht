@@ -30,14 +30,17 @@ namespace yacht.admin
         protected void SubmitBtn_Click(object sender, EventArgs e)
         {
             string id= Request.QueryString["id"];
+            string overview = HttpUtility.HtmlEncode(overviewCK.Text);
+            string layout = HttpUtility.HtmlEncode(layoutCK.Text);
+            string specification = HttpUtility.HtmlEncode(specificationCK.Text);
             SqlConnection connection = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["yachtConnectionString"].ConnectionString);
             connection.Open();
             string data = "UPDATE yachtType SET overviewContent = @overviewContent, layout = @layout, specification = @specification WHERE id=@id";
             SqlCommand cmd = new SqlCommand(data, connection);
             cmd.Parameters.AddWithValue("@id", id);
-            cmd.Parameters.AddWithValue("@overviewContent", overviewCK.Text);
-            cmd.Parameters.AddWithValue("@layout", layoutCK.Text);
-            cmd.Parameters.AddWithValue("@specification", specificationCK.Text);
+            cmd.Parameters.AddWithValue("@overviewContent", overview);
+            cmd.Parameters.AddWithValue("@layout", layout);
+            cmd.Parameters.AddWithValue("@specification", specification);
             cmd.ExecuteNonQuery();
             connection.Close();
             Response.Redirect("yacht.aspx");

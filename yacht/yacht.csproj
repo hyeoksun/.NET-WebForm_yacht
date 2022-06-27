@@ -50,12 +50,34 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>ckfinder\bin\Release\CKFinder.dll</HintPath>
     </Reference>
+    <Reference Include="Konscious.Security.Cryptography.Argon2, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Konscious.Security.Cryptography.Argon2.1.3.0\lib\net46\Konscious.Security.Cryptography.Argon2.dll</HintPath>
+    </Reference>
+    <Reference Include="Konscious.Security.Cryptography.Blake2, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Konscious.Security.Cryptography.Blake2.1.1.0\lib\net46\Konscious.Security.Cryptography.Blake2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -83,6 +105,7 @@
     <Content Include="admin\AboutUs.aspx" />
     <Content Include="admin\AboutUsContent.aspx" />
     <Content Include="admin\addDealer.aspx" />
+    <Content Include="admin\addMembers.aspx" />
     <Content Include="admin\addNews.aspx" />
     <Content Include="admin\addYacht.aspx" />
     <Content Include="admin\addYachtContent.aspx" />
@@ -90,6 +113,32 @@
     <Content Include="admin\Certificate.aspx" />
     <Content Include="admin\CertificateContent.aspx" />
     <Content Include="admin\news.aspx" />
+    <Content Include="admin\plugins\amchart\js\amcharts.js" />
+    <Content Include="admin\plugins\amchart\js\ammap.min.js" />
+    <Content Include="admin\plugins\amchart\js\gauge.js" />
+    <Content Include="admin\plugins\amchart\js\images\dragIconRoundBig.svg" />
+    <Content Include="admin\plugins\amchart\js\images\lens.svg" />
+    <Content Include="admin\plugins\amchart\js\light.js" />
+    <Content Include="admin\plugins\amchart\js\pie.min.js" />
+    <Content Include="admin\plugins\amchart\js\radar.js" />
+    <Content Include="admin\plugins\amchart\js\serial.js" />
+    <Content Include="admin\plugins\amchart\js\usaLow.js" />
+    <Content Include="admin\plugins\amchart\js\worldLow.js" />
+    <Content Include="admin\plugins\animation\css\animate.min.css" />
+    <Content Include="admin\plugins\bootstrap\css\bootstrap.css" />
+    <Content Include="admin\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="admin\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="admin\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="admin\plugins\bootstrap\js\popover.js" />
+    <Content Include="admin\plugins\chart-morris\css\morris.css" />
+    <Content Include="admin\plugins\chart-morris\js\morris.min.js" />
+    <Content Include="admin\plugins\chart-morris\js\raphael.min.js" />
+    <Content Include="admin\plugins\google-maps\js\gmaps.js" />
+    <Content Include="admin\plugins\jquery-scrollbar\css\jquery.scrollbar.min.css" />
+    <Content Include="admin\plugins\jquery-scrollbar\js\jquery.scrollbar.min.js" />
+    <Content Include="admin\plugins\jquery-ui\js\jquery-ui.js" />
+    <Content Include="admin\plugins\jquery\js\jquery.min.js" />
+    <Content Include="admin\SignIn.aspx" />
     <Content Include="admin\updateDealer.aspx" />
     <Content Include="admin\area_dealers.aspx" />
     <Content Include="admin\contact.aspx" />
@@ -247,12 +296,13 @@
     <Content Include="admin\js\uikit.min.js" />
     <Content Include="admin\js\vendor-all.js" />
     <Content Include="admin\js\vendor-all.min.js" />
-    <Content Include="admin\SignIn.aspx" />
     <Content Include="admin\updateNews.aspx" />
+    <Content Include="admin\UpdateProfile.aspx" />
     <Content Include="admin\updateYacht.aspx" />
     <Content Include="admin\updateYachtContent.aspx" />
     <Content Include="admin\updateYachtPhoto.aspx" />
     <Content Include="admin\upload\dealerPhoto\default.png" />
+    <Content Include="admin\upload\members\default.png" />
     <Content Include="admin\yacht.aspx" />
     <Content Include="Certificate.aspx" />
     <Content Include="ckfinder\bin\Debug\CKFinder.dll" />
@@ -1370,6 +1420,13 @@
     <Compile Include="admin\addDealer.aspx.designer.cs">
       <DependentUpon>addDealer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\addMembers.aspx.cs">
+      <DependentUpon>addMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\addMembers.aspx.designer.cs">
+      <DependentUpon>addMembers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\addNews.aspx.cs">
       <DependentUpon>addNews.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1405,12 +1462,26 @@
     <Compile Include="admin\CertificateContent.aspx.designer.cs">
       <DependentUpon>CertificateContent.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\checkAccount.ashx.cs">
+      <DependentUpon>checkAccount.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\memberInfo.cs" />
     <Compile Include="admin\news.aspx.cs">
       <DependentUpon>news.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\news.aspx.designer.cs">
       <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\signOut.ashx.cs">
+      <DependentUpon>signOut.ashx</DependentUpon>
     </Compile>
     <Compile Include="admin\updateDealer.aspx.cs">
       <DependentUpon>updateDealer.aspx</DependentUpon>
@@ -1447,26 +1518,19 @@
     <Compile Include="admin\countries.aspx.designer.cs">
       <DependentUpon>countries.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\sign.Master.cs">
-      <DependentUpon>sign.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin\sign.Master.designer.cs">
-      <DependentUpon>sign.Master</DependentUpon>
-    </Compile>
-    <Compile Include="admin\SignIn.aspx.cs">
-      <DependentUpon>SignIn.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin\SignIn.aspx.designer.cs">
-      <DependentUpon>SignIn.aspx</DependentUpon>
-    </Compile>
     <Compile Include="admin\updateNews.aspx.cs">
       <DependentUpon>updateNews.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\updateNews.aspx.designer.cs">
       <DependentUpon>updateNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\UpdateProfile.aspx.cs">
+      <DependentUpon>UpdateProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\UpdateProfile.aspx.designer.cs">
+      <DependentUpon>UpdateProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\updateYacht.aspx.cs">
       <DependentUpon>updateYacht.aspx</DependentUpon>
@@ -1658,7 +1722,8 @@
     <Content Include="admin\fonts\pct.woff" />
     <Content Include="admin\json\cities.json" />
     <Content Include="admin\json\citynames.json" />
-    <Content Include="admin\sign.Master" />
+    <Content Include="admin\signOut.ashx" />
+    <Content Include="admin\checkAccount.ashx" />
     <None Include="packages.config" />
     <Content Include="Scripts\ckeditor\ckeditor.pack" />
     <Content Include="Tayana.Master" />

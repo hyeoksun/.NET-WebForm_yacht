@@ -20,30 +20,28 @@
             });
         });
     </script>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-        <link rel="stylesheet" type="text/css" href="css/jquery.ad-gallery.css">
-        <style type="text/css">
-            img,
-            div,
-            input {
-                behavior: url("");
+    <link rel="stylesheet" type="text/css" href="css/jquery.ad-gallery.css">
+    <style type="text/css">
+        img,
+        div,
+        input {
+            behavior: url("");
+        }
+    </style>
+    <script type="text/javascript" src="Scripts/jquery.ad-gallery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var galleries = $('.ad-gallery').adGallery();
+            galleries[0].settings.effect = 'fade';
+            if ($('.banner1 input[type=hidden]').val() == "0") {
+                $(".bannermasks").hide();
+                $(".banner1").hide();
+                $("#crumb1").css("top", "125px");
             }
-        </style>
-        <script type="text/javascript" src="Scripts/jquery.ad-gallery.js"></script>
-        <script type="text/javascript">
-            $(function () {
-
-                var galleries = $('.ad-gallery').adGallery();
-                galleries[0].settings.effect = 'fade';
-                if ($('.banner1 input[type=hidden]').val() == "0") {
-                    $(".bannermasks").hide();
-                    $(".banner1").hide();
-                    $("#crumb1").css("top", "125px");
-                }
-
-
-            });
-        </script>
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -96,7 +94,7 @@
                                     <ItemTemplate>
                                         <li>
                                             <a href='<%#Eval("ImageUrl") %>'>
-                                                <img src='<%#Eval("ImageUrl") %>' class="image0" alt=""/>
+                                                <img src='<%#Eval("ImageUrl") %>' class="image0" alt="" height="59px"/>
                                             </a>
                                         </li>
                                     </ItemTemplate>

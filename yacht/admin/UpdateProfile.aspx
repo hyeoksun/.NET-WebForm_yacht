@@ -36,11 +36,20 @@
                                         <asp:Label ID="Label3" runat="server" Text="Password" Font-Size="Medium"></asp:Label></td>
                                     <td>
                                         <asp:Literal ID="Literal1" runat="server">Enter origin Password：</asp:Literal>
-                                        <asp:TextBox ID="OriginPassTB" runat="server" Width="60%"></asp:TextBox>
+                                        <br/>
+                                        <asp:TextBox ID="OriginPassTB" runat="server" Width="60%" TextMode="Password"></asp:TextBox>
+                                        <br/>
+                                        <asp:Label ID="Label1" runat="server" Text="" Visible="False"></asp:Label>
+                                        <br/>
                                         <asp:Literal ID="Literal2" runat="server">Enter new password：</asp:Literal>
-                                        <asp:TextBox ID="NewPassTB" runat="server" Width="60%"></asp:TextBox>
+                                        <br/>
+                                        <asp:TextBox ID="NewPassTB" runat="server" Width="60%" TextMode="Password"></asp:TextBox>
+                                        <br/>
                                         <asp:Literal ID="Literal3" runat="server">Enter new password again：</asp:Literal>
-                                        <asp:TextBox ID="NewPassTB2" runat="server" Width="60%"></asp:TextBox>
+                                        <br/>
+                                        <asp:TextBox ID="NewPassTB2" runat="server" Width="60%" TextMode="Password"></asp:TextBox>
+                                        <br/>
+                                        <asp:Label ID="Label5" runat="server" Text="" Visible="False"></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -54,9 +63,9 @@
                     </div>
                 </div>
                 <div class="card-body" style="margin: auto;">
-                    <asp:Button ID="CancelBtn" runat="server" Text="Cancel" class="btn  btn-secondary btn-sm" OnClick="CancelBtn_Click" />
+                    <asp:Button ID="submitBtn" runat="server" Text="Submit" class="btn  btn-secondary btn-sm" OnClick="submitBtn_Click" />
                     &nbsp;&nbsp;
-                    <asp:Button ID="Button1" runat="server" Text="Submit" class="btn  btn-secondary btn-sm" OnClick="Button1_Click" />
+                    <asp:Button ID="cancelBtn" runat="server" Text="Cancel" class="btn  btn-secondary btn-sm" OnClick="cancelBtn_Click" />
                 </div>
             </div>
         </div>

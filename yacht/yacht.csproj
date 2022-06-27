@@ -138,6 +138,7 @@
     <Content Include="admin\plugins\jquery-scrollbar\js\jquery.scrollbar.min.js" />
     <Content Include="admin\plugins\jquery-ui\js\jquery-ui.js" />
     <Content Include="admin\plugins\jquery\js\jquery.min.js" />
+    <Content Include="admin\profile.aspx" />
     <Content Include="admin\SignIn.aspx" />
     <Content Include="admin\updateDealer.aspx" />
     <Content Include="admin\area_dealers.aspx" />
@@ -1472,6 +1473,13 @@
     </Compile>
     <Compile Include="admin\news.aspx.designer.cs">
       <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\SignIn.aspx.cs">
       <DependentUpon>SignIn.aspx</DependentUpon>

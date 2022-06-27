@@ -39,7 +39,7 @@
                                     <asp:TextBox ID="accountTB" runat="server" CssClass="form-control" Text="" placholder=""></asp:TextBox>
                                 </div>
                                 <div class="form-group mb-4">
-                                    <asp:TextBox ID="passwordTB" runat="server" CssClass="form-control" Text="" placeholder=""></asp:TextBox>
+                                    <asp:TextBox ID="passwordTB" runat="server" CssClass="form-control" Text="" placeholder="" TextMode="Password"></asp:TextBox>
                                 </div>
                                 <%--<div class="custom-control custom-checkbox text-left mb-4 mt-2">
                                     <input type="checkbox" class="custom-control-input" id="customCheck1">

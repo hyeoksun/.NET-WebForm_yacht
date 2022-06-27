@@ -96,6 +96,15 @@ namespace yacht.admin
         protected global::System.Web.UI.WebControls.TextBox OriginPassTB;
 
         /// <summary>
+        /// Label1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
         /// Literal2 控制項。
         /// </summary>
         /// <remarks>
@@ -132,6 +141,15 @@ namespace yacht.admin
         protected global::System.Web.UI.WebControls.TextBox NewPassTB2;
 
         /// <summary>
+        /// Label5 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+
+        /// <summary>
         /// Label4 控制項。
         /// </summary>
         /// <remarks>
@@ -150,21 +168,21 @@ namespace yacht.admin
         protected global::System.Web.UI.WebControls.TextBox EmailTB;
 
         /// <summary>
-        /// CancelBtn 控制項。
+        /// submitBtn 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CancelBtn;
+        protected global::System.Web.UI.WebControls.Button submitBtn;
 
         /// <summary>
-        /// Button1 控制項。
+        /// cancelBtn 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button cancelBtn;
     }
 }

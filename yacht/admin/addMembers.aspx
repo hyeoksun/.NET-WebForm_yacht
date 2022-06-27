@@ -14,7 +14,7 @@
                             <div class="col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5>Add New Country</h5>
+                                        <h5>Add New Member</h5>
                                     </div>
                                     <div class="card-body">
                                         <asp:Literal ID="Literal1" runat="server">Account：</asp:Literal>
@@ -23,7 +23,7 @@
                                         <br />
                                         <br />
                                         <asp:Literal ID="Literal2" runat="server">Password：</asp:Literal>
-                                        <asp:TextBox ID="passwordTB" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="passwordTB" runat="server" TextMode="Password"></asp:TextBox>
                                         <br />
                                         <br />
                                         <asp:Literal ID="Literal3" runat="server">Name：</asp:Literal>

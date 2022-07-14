@@ -72,11 +72,12 @@ namespace yacht.admin
             //檢查有無重複帳號
             commandCheck.Parameters.AddWithValue("@account", accountTB.Text);
             connection.Open();
-            SqlDataReader readerCountry = commandCheck.ExecuteReader();
-            if (readerCountry.Read())
+            SqlDataReader readerMember = commandCheck.ExecuteReader();
+            if (readerMember.Read())
             {
                 haveSameAccount = true;
                 Literal4.Visible = true;
+                gridviewData();
             }
             connection.Close();
 
@@ -103,8 +104,9 @@ namespace yacht.admin
                 accountTB.Text = "";
                 passwordTB.Text = "";
                 nameTB.Text = "";
+                //頁面重整
+                Response.Redirect(Request.Url.ToString());
             }
-            Response.Redirect(Request.Url.ToString());
         }
 
 

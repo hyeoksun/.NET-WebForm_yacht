@@ -18,7 +18,7 @@
                                             <h5>Dealer List</h5>
                                         </div>
                                         <div class="card-body">
-                                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id,id1" Width="100%" HeaderStyle-HorizontalAlign="Center" HorizontalAlign="Center" OnRowDeleting="GridView1_RowDeleting" >
+                                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" Width="100%" HeaderStyle-HorizontalAlign="Center" HorizontalAlign="Center" OnRowDeleting="GridView1_RowDeleting" >
                                                 <Columns>
                                                     <asp:TemplateField HeaderText="No." ItemStyle-HorizontalAlign="Center">
                                                         <ItemTemplate>
@@ -33,7 +33,7 @@
                                                     <asp:BoundField DataField="LastMotifiedDate1" HeaderText="Last Motified Date" SortExpression="LastMotifiedDate1" ItemStyle-HorizontalAlign="Center"/>
                                                     <asp:TemplateField HeaderText="Edit" ItemStyle-HorizontalAlign="Center">
                                                         <ItemTemplate>
-                                                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%#"updateDealer.aspx?id="+Eval("id1")%>' Font-Size="Medium" class="btn  btn-secondary btn-sm">Edit</asp:HyperLink>
+                                                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%#"updateDealer.aspx?id="+Eval("id")%>' Font-Size="Medium" class="btn  btn-secondary btn-sm">Edit</asp:HyperLink>
                                                         </ItemTemplate>
                                                     </asp:TemplateField>
                                                     <asp:TemplateField HeaderText="Delete" ShowHeader="False" ItemStyle-HorizontalAlign="Center">

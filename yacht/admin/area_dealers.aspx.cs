@@ -33,10 +33,10 @@ namespace yacht.admin
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            string id1 = GridView1.DataKeys[e.RowIndex].Value.ToString();
+            string id = GridView1.DataKeys[e.RowIndex].Value.ToString();
             SqlConnection sqlConnection = new SqlConnection(getsql);
             sqlConnection.Open();
-            SqlCommand sqlCommand = new SqlCommand($"delete from dealers WHERE  (id = {id1})", sqlConnection);
+            SqlCommand sqlCommand = new SqlCommand($"delete from dealers WHERE  (id = {id})", sqlConnection);
             sqlCommand.ExecuteNonQuery();
             sqlConnection.Close();
             Response.Redirect(Request.Url.ToString());
